@@ -4,16 +4,7 @@
 @import url('https://onlinecampus.bu.edu/bbcswebdav/courses/00cwr_odeelements/css/screen.css');
 @import url('https://onlinecampus.bu.edu/bbcswebdav/courses/00cwr_odeelements/css/print.css') print;
 
-/* College graphic */
-body:after {
-	clear: both;
-	display: block;
-	content: url('https://onlinecampus.bu.edu/bbcswebdav/courses/00cwr_odeelements/course_template_images/colleges/metropolitan_college/college.png');
-	padding-top: 4em;
-	padding-bottom: 1.3em;
-	text-align: right;
-	}
-	
+
 /* Hide/show due dates in the syllabus*/
 /*.date {display: none}*/
 
