@@ -1,0 +1,52 @@
+﻿/* Last updated 17 May 2012 */
+
+@charset "UTF-8";
+@import url('https://onlinecampus.bu.edu/bbcswebdav/courses/00cwr_odeelements/css/screen.css');
+@import url('https://onlinecampus.bu.edu/bbcswebdav/courses/00cwr_odeelements/css/print.css') print;
+
+/* College graphic */
+body:after {
+	clear: both;
+	display: block;
+	content: url('https://onlinecampus.bu.edu/bbcswebdav/courses/00cwr_odeelements/course_template_images/colleges/metropolitan_college/college.png');
+	padding-top: 4em;
+	padding-bottom: 1.3em;
+	text-align: right;
+	}
+	
+/* Hide/show due dates in the syllabus*/
+/*.date {display: none}*/
+
+/*Highlight in red onlyODE elements in the syllabus*/
+/*.onlyode {
+	color: red;
+}*/
+/*Highlight in green hidden due date elements in the syllabus*/
+/*.date {
+	color: green;
+}
+*/
+
+/* Custom CSS for this course goes under here */
+
+.code {
+	font-family: "Courier New", Courier, monospace;
+	color:#00F;
+}
+
+iframe.tutorial {
+	width: 920px;
+	height: 550px;
+	overflow: hidden;
+
+}
+
+.outlineshadow  {
+border: thin solid #000;
+box-shadow: 8px 8px 3px #777;
+}
+
+
+
+
+
