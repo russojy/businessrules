@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0193)https://onlinecampus.bu.edu/bbcswebdav/courses/18fallmetcs669_c1/18fallmetcs669_c1_ImportedContent_20180810124042/course/module1/metcs669_M1L2T03_BusinessRulesandHowTheyAffectDatabaseDesign.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Business Rules and How They Affect Database Design</title>
+
+<link href="./Business Rules and How They Affect Database Design_files/local.css" rel="stylesheet" type="text/css">
+<script src="./Business Rules and How They Affect Database Design_files/jQueryLibrary.min.js.download"></script>
+<script src="./Business Rules and How They Affect Database Design_files/ty.js.download"></script>
+</head>
+<body>
+
+<h1>Business Rules and How They Affect Database Design</h1>
+
+<p>A business rule is a brief, precise, and unambiguous description of a policy, procedure, or principle within a specific organization's environment. Business rules do not just apply to traditional business, but also to educational institutions, religious groups, government units, and other organizations. Business rules, derived from a detailed description of an organization's operations, help to create and enforce actions within that organization's environment. Business rules must be rendered in writing and updated to reflect any change in the organization's operational environment. Properly written business rules are used to define entities, attributes, relationships, and constraints. Knowing the business rules promotes the creation of an accurate data model based on how the organization actually works and what role is played by the data within that organization's operations. Consequently, the database designer must identify the organization's business rules and analyze their impact on the nature, role, and scope of data.</p>
+
+<p>A business rule defines or constrains one aspect of your business that is intended to assert business structure or influence the behavior of your business. Business rules often focus on access control issues; for example in a bank the following business rule could apply, “If a customer closes a safety deposit box, the key and lock must be replaced (or switched with an empty box) before the next customer is allowed to use the safety deposit box.” When a business rule is discovered, created or changed it may occasionally require us to redesign the data model. Because databases and the data that they store must persist in spite of changes to business rules, it is important to design databases so that they are independent of the kinds of business rules that may change. For example, the following are business rules that one would expect to be represented in a database for flight operations, because they are highly unlikely to change, and because they are fundamental to representing a flight segment, which is the term for everything involved in an aircraft taking off as part of a scheduled flight, flying and landing:</p>
+
+<ul>
+<li>A flight segment has one originating city and one destination city, which are normally different.</li>
+<li>A flight segment has one aircraft.</li>
+</ul>
+
+<p>In contrast, the following hypothetical business rules should probably not be represented in the database structure, because they may change:</p>
+
+<ul>
+<li>A flight segment has at least three flight attendants.</li>
+<li>Flights from Los Angeles to San Francisco use only Boeing 737 aircraft.</li>
+</ul>
+
+<p>Although many business rules should not be enforced in the database
+structure, the data stored in the database will be dependent upon
+and constrained by the business rules. It can be technically difficult
+and expensive to change the database structure when business rules
+change. It is therefore important that the database structure
+support not only the current business rules, but also likely future
+changes to those business rules.</p>
+
+<div class="testcenter" id="1.9">
+<form>
+<h4>Test Yourself 1.9</h4>
+<p>Select all that are true of business rules. (Check all that apply.)</p>
+<table class="ty">
+<tbody><tr>
+<td><input type="checkbox" value="F" name="x"></td>
+<td>Business rules only apply to traditional businesses.</td>
+<td style="display: none;">This is false. Business rules do not just apply to traditional business,
+but also to educational institutions, religious groups, government
+units, and other organizations.</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="F" name="x"></td>
+<td>Business rules are written to describe only entities or attributes.</td>
+<td style="display: none;">This is false. Business rules are used to define entities, attributes,
+relationships, and constraints.</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="T" name="x"></td>
+<td>When a new business rule is discovered it may require a modification
+to the data model.</td>
+<td style="display: none;">This is true. A business is constantly changing and there are always
+new business rules added. This may require a modification in the
+current data model.</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="T" name="x"></td>
+<td>Data stored in the database will be dependent and constrained
+by the business rules.</td>
+<td style="display: none;">This is true. Since the database is built off of business rules.
+The data stored will be dependent and constrained correctly.</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="T" name="x"></td>
+<td>A good business rule could be: A student may only take one class.</td>
+<td style="display: none;">This is true. A good business rule describes the use of entities
+or relationships between other entities.</td>
+</tr>
+</tbody></table>
+<button>Show Answer</button>
+</form>
+</div>
+
+
+</body></html>
